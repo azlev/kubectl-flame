@@ -5,7 +5,7 @@ package data
 import (
 	"time"
 
-	"github.com/VerizonMedia/kubectl-flame/api"
+	"github.com/azlev/kubectl-flame/api"
 )
 
 type TargetDetails struct {

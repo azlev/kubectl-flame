@@ -10,9 +10,9 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/VerizonMedia/kubectl-flame/agent/details"
-	"github.com/VerizonMedia/kubectl-flame/agent/profiler"
-	"github.com/VerizonMedia/kubectl-flame/api"
+	"github.com/azlev/kubectl-flame/agent/details"
+	"github.com/azlev/kubectl-flame/agent/profiler"
+	"github.com/azlev/kubectl-flame/api"
 )
 
 func main() {

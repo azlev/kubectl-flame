@@ -8,8 +8,8 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/util/uuid"
 
-	"github.com/VerizonMedia/kubectl-flame/cli/cmd/data"
-	"github.com/VerizonMedia/kubectl-flame/cli/cmd/version"
+	"github.com/azlev/kubectl-flame/cli/cmd/data"
+	"github.com/azlev/kubectl-flame/cli/cmd/version"
 )
 
 type pythonCreator struct{}

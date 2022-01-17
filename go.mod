@@ -1,4 +1,4 @@
-module github.com/VerizonMedia/kubectl-flame
+module github.com/azlev/kubectl-flame
 
 go 1.13
 
