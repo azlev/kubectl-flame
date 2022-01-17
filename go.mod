@@ -1,6 +1,6 @@
 module github.com/azlev/kubectl-flame
 
-go 1.13
+go 1.17
 
 require (
 	cloud.google.com/go v0.46.3 // indirect
