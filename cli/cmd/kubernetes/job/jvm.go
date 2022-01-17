@@ -11,7 +11,6 @@ import (
 	"k8s.io/apimachinery/pkg/util/uuid"
 
 	"github.com/azlev/kubectl-flame/cli/cmd/data"
-	"github.com/azlev/kubectl-flame/cli/cmd/version"
 )
 
 type jvmCreator struct{}
@@ -111,14 +110,5 @@ func (c *jvmCreator) create(targetPod *apiv1.Pod, cfg *data.FlameConfig) (string
 }
 
 func (c *jvmCreator) getAgentImage(targetDetails *data.TargetDetails) string {
-	if targetDetails.Image != "" {
-		return targetDetails.Image
-	}
-
-	tag := fmt.Sprintf("%s-jvm", version.GetCurrent())
-	if targetDetails.Alpine {
-		tag = fmt.Sprintf("%s-alpine", tag)
-	}
-
-	return fmt.Sprintf("%s:%s", baseImageName, tag)
+	return fmt.Sprintf("azlev/kubectl-flame:v0.2.2-jvm")
 }
